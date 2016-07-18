@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbO-7g-6Rn" customClass="LoginView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="240"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSR-rQ-wZ8">
+                    <rect key="frame" x="10" y="92" width="180" height="45"/>
+                    <color key="backgroundColor" red="0.86274509803921573" green="0.28235294117647058" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Lfc-T1-9ll"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Create Account">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="3"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createAccountAction:" destination="YbO-7g-6Rn" eventType="touchUpInside" id="Cuq-ss-pCf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4g-SR-W2O">
+                    <rect key="frame" x="10" y="147" width="180" height="45"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.28235294119999998" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5Jt-Qy-Ly6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="3"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="signInAction:" destination="YbO-7g-6Rn" eventType="touchUpInside" id="ZTe-DY-0uM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tje-FZ-r0n">
+                    <rect key="frame" x="105" y="202" width="80" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="bGg-yt-naQ"/>
+                        <constraint firstAttribute="height" constant="20" id="pu6-dd-LEi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="skip">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="pu6-dd-LEi"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="skipAction:" destination="YbO-7g-6Rn" eventType="touchUpInside" id="ogy-Cd-WXw"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qQk-P7-DkH">
+                    <rect key="frame" x="70" y="27.5" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="z7F-Ku-Grx"/>
+                        <constraint firstAttribute="width" constant="60" id="zdK-h2-d8x"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="L4g-SR-W2O" firstAttribute="leading" secondItem="YbO-7g-6Rn" secondAttribute="leading" constant="10" id="10d-w7-GPs"/>
+                <constraint firstAttribute="bottom" secondItem="tje-FZ-r0n" secondAttribute="bottom" constant="10" id="1ik-3c-U5d"/>
+                <constraint firstAttribute="trailing" secondItem="KSR-rQ-wZ8" secondAttribute="trailing" constant="10" id="2zc-M2-Qvg"/>
+                <constraint firstAttribute="trailing" secondItem="L4g-SR-W2O" secondAttribute="trailing" constant="10" id="6pT-ZE-NnJ"/>
+                <constraint firstAttribute="trailing" secondItem="tje-FZ-r0n" secondAttribute="trailing" constant="15" id="Eth-dT-yVQ"/>
+                <constraint firstItem="tje-FZ-r0n" firstAttribute="top" secondItem="L4g-SR-W2O" secondAttribute="bottom" constant="10" id="Lns-EQ-H0H"/>
+                <constraint firstItem="qQk-P7-DkH" firstAttribute="top" secondItem="YbO-7g-6Rn" secondAttribute="top" constant="40" id="MfV-57-pMr"/>
+                <constraint firstAttribute="bottom" secondItem="L4g-SR-W2O" secondAttribute="bottom" constant="55" id="YDN-rm-hdC"/>
+                <constraint firstItem="KSR-rQ-wZ8" firstAttribute="centerY" secondItem="YbO-7g-6Rn" secondAttribute="centerY" constant="10" id="b0c-lX-vfd"/>
+                <constraint firstItem="KSR-rQ-wZ8" firstAttribute="leading" secondItem="YbO-7g-6Rn" secondAttribute="leading" constant="10" id="bGi-ZX-gLZ"/>
+                <constraint firstItem="tje-FZ-r0n" firstAttribute="top" secondItem="L4g-SR-W2O" secondAttribute="bottom" constant="20" id="c0x-35-waO"/>
+                <constraint firstItem="qQk-P7-DkH" firstAttribute="centerX" secondItem="YbO-7g-6Rn" secondAttribute="centerX" id="e0J-cj-P7Y"/>
+                <constraint firstItem="qQk-P7-DkH" firstAttribute="centerY" secondItem="YbO-7g-6Rn" secondAttribute="centerY" constant="-62" id="l2Z-yd-TJG"/>
+                <constraint firstAttribute="bottom" secondItem="tje-FZ-r0n" secondAttribute="bottom" constant="8" id="nnX-FY-4T4"/>
+                <constraint firstItem="L4g-SR-W2O" firstAttribute="top" secondItem="KSR-rQ-wZ8" secondAttribute="bottom" constant="10" id="rf6-S2-YSK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="MfV-57-pMr"/>
+                    <exclude reference="b0c-lX-vfd"/>
+                    <exclude reference="YDN-rm-hdC"/>
+                    <exclude reference="c0x-35-waO"/>
+                    <exclude reference="nnX-FY-4T4"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="createBtn" destination="KSR-rQ-wZ8" id="b1r-de-3UM"/>
+                <outlet property="signBtn" destination="L4g-SR-W2O" id="3fR-Kl-yFy"/>
+                <outlet property="skipBtn" destination="tje-FZ-r0n" id="PYc-H0-TXF"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="85" height="85"/>
+    </resources>
+</document>
